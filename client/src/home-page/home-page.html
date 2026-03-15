@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home-page-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>you are welcome !!!</h1>
+    </header>
+
+    <nav>
+        <a href="#">main</a>
+        <a href="#">catalog</a>
+        <a href="#">contacts</a>
+    </nav>
+
+    <div id="sort-options">
+        <label>
+            sort by:
+            <select id="sort-select">
+                <option value="name">name</option>
+                <option value="category">category</option>
+                <option value="price">price</option>
+            </select>
+        </label>
+    </div>
+
+    <section>
+        <h2>sale!</h2>
+        <div id="data-container" class="card-container">
+        
+        </div>
+
+    </section>
+    <div id="cart">
+        <button id="cart-button">go to cart</button>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="product-details" class="product-details-container">
+                <!-- Детали продукта будут отображаться здесь -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>we need footer?</p>
+    </footer>
+
+
+
+
+
+
+    <script src="home-page-script.js"></script>
+</body>
+</html>
