@@ -18,7 +18,7 @@ async function singUp(event) {
     let email = event.target.userEmail.value;
     let password = event.target.userPassword.value;
     try {
-        const response = await axios.post("http://localhost:5500/users",
+        const response = await axios.post("http://localhost:4000/users",
            { username, email, password });
            
         if (response.data !== undefined) {
@@ -35,13 +35,12 @@ async function signIn(event) {
   let email = event.target.userEmail.value;
   let password = event.target.userPassword.value;
   try {
-    const response = await axios.post("http://localhost:5500/users/sign-in",
+    const response = await axios.post("http://localhost:4000/users/sign-in",
      { email, password });
      
     if (response.data !== undefined) {
       console.log("Sign in successful");
-      // תיקון הנתיב לפי ההיררכיה שבתמונה
-      window.location.href = 'http://localhost:5500/src/home-page/home-page.html';
+      window.location.href='http://127.0.0.1:5500/client/src/home-page/home-page.html';
       // Perform actions after successful sign-in, such as redirecting to a new page or updating UI.
     }
   } catch (error) {
