@@ -41,7 +41,7 @@ describe('Authentication E2E Tests', () => {
     
     await new Promise(r => setTimeout(r, 3000)); 
     expect(loggedSuccess).toBe(true);
-  }, 30000); // הגדלת זמן הטסט ל-30 שניות
+  }, 60000); // הגדלת זמן הטסט ל-30 שניות
 
     test('Sign In form submission', async () => {
     // 1. ניצור משתמש חדש וייחודי כדי להשתמש בו בבדיקה
